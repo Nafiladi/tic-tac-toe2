@@ -1,0 +1,35 @@
+<!-- public/game.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head><link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>Game Lobby</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="lobby">
+    <h1>Game Lobby</h1>
+    <button id="create-game">Create Game</button>
+    <form id="join-game-form">
+      <input type="text" id="game-id-input" placeholder="Enter Game ID">
+      <button type="submit">Join Game</button>
+    </form>
+    <div id="win-rate">
+      <!-- Display win rate -->
+    </div>
+  </div>
+  <!-- Inside Game Lobby -->
+<div id="win-rate">
+    <h3>Your Win Rate:</h3>
+    <div id="win-bar">
+      <div id="win-progress"></div>
+    </div>
+    <p id="win-percentage">0%</p>
+  </div>
+  
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
